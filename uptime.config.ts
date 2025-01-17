@@ -23,7 +23,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: "Laohui's Blog",
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://laohui.net',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -45,18 +45,18 @@ const workerConfig = {
       responseKeyword: 'success',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://xxx.example.com',
+      checkLocationWorkerRoute: 'https://laohui.net',
     },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      name: "laohui's home",
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
+      target: 'asusbot.dolt.cc:10080',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://pan.dolt.cc',
       timeout: 5000,
     },
   ],
